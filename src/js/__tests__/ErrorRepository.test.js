@@ -2,10 +2,6 @@ import ErrorRepository from '../ErrorRepository';
 
 const errorRepository = new ErrorRepository();
 
-errorRepository.storage.set(0, 'Unnown type of character');
-errorRepository.storage.set(1, 'A character with the same name already exists');
-errorRepository.storage.set(2, 'Name should be no more than ten characters');
-
 test.each([
   [0, 'Unnown type of character'],
   [1, 'A character with the same name already exists'],
